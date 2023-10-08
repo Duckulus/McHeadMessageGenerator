@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>headcord</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+
+<body>
+    <script src="./index.js"></script>
+
+    <h1>Minecraft Colored Head Message Generator</h1>
+    <p>
+        Enter your Minecraft Username and post the Generated Message into Discord!
+    </p>
+    <p>
+        This Project was made possible by <a
+            href="https://gist.github.com/kkrypt0nn/a02506f3712ff2d1c8ca7c9e0aed7c06">this guide</a> and <a
+            href="https://mc-heads.net/">mc-heads.net</a>. Check them out!
+    </p>
+
+    <form id="form">
+        <div style="display: flex;">
+
+            <input placeholder="Username" id="usernameInput" type="text" />
+            <button type="submit">Generate</button>
+        </div>
+    </form>
+
+    <h3>Generated Message</h3>
+    <pre>
+        <code id="outputField" contenteditable="false"></code>
+    </pre>
+    <button id="copyButton">Click to Copy</button>
+
+    <h3>Preview</h3>
+    <canvas id="previewCanvas" style="border: solid 1px black;"></canvas>
+</body>
+
+</html>
