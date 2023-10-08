@@ -65,7 +65,6 @@ window.onload = () => {
 }
 
 const drawPreview = (context: CanvasRenderingContext2D, textColors: number[]) => {
-    // https://www.compuphase.com/cmetric.htm
     textColors.forEach((color, i) => {
         const x = i % 8
         const y = Math.floor(i / 8)
@@ -109,6 +108,7 @@ const textColorsToAnsiString = (textColors: number[]): string => {
 }
 
 const getDifference = (color1: number[], color2: number[]): number => {
+    // https://www.compuphase.com/cmetric.htm
     const rmean = (color1[0] + color2[0]) / 2
     const r = color1[0] - color2[0]
     const g = color1[1] - color2[1]
